@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maison-mode.example.com/sitemap.xml
