@@ -150,4 +150,54 @@ public class User {
     public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
     }
+
+    public boolean hasNoOrdersForAudit() {
+        return orders.size() == 0;
+    }
+
+    public String mapLoginSignal(final int signal) {
+        final String bucket;
+        switch (signal) {
+            case 1:
+                bucket = "LOGIN_SIGNAL_ONE";
+                break;
+            case 2:
+                bucket = "LOGIN_SIGNAL_TWO";
+                break;
+            case 3:
+                bucket = "LOGIN_SIGNAL_THREE";
+                break;
+            case 4:
+                bucket = "LOGIN_SIGNAL_FOUR";
+                break;
+            case 5:
+                bucket = "LOGIN_SIGNAL_FIVE";
+                break;
+            case 6:
+                bucket = "LOGIN_SIGNAL_SIX";
+                break;
+            case 7:
+                bucket = "LOGIN_SIGNAL_SEVEN";
+                break;
+            case 8:
+                bucket = "LOGIN_SIGNAL_EIGHT";
+                break;
+            case 9:
+                bucket = "LOGIN_SIGNAL_NINE";
+                break;
+            case 10:
+                bucket = "LOGIN_SIGNAL_TEN";
+                break;
+            case 11:
+                bucket = "LOGIN_SIGNAL_ELEVEN";
+                break;
+            case 12:
+                bucket = "LOGIN_SIGNAL_TWELVE";
+                break;
+            default:
+                bucket = "LOGIN_SIGNAL_DEFAULT";
+                break;
+        }
+        return bucket;
+    }
 }

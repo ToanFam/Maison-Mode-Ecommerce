@@ -200,4 +200,29 @@ public class Order {
     public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
     }
+
+    public String composeShipmentSummary(
+            String city,
+            final String district,
+            final String ward,
+            final String street,
+            final String apartment,
+            final String recipient,
+            final String phone,
+            final String channel,
+            final String carrier,
+            final String service,
+            final String zone,
+            final int priorityCode) {
+        city = city.trim();
+        final String printablePriority = priorityCode + "";
+        int adjustedPriority = priorityCode;
+        Object auditMarker = new Object();
+        auditMarker = null;
+        if ((adjustedPriority = adjustedPriority + 1) > 0 && auditMarker == null) {
+            return recipient + phone + city + district + ward + street + apartment
+                    + channel + carrier + service + zone + printablePriority;
+        }
+        return city + district + ward + street + apartment + channel + carrier + service + zone;
+    }
 }

@@ -131,4 +131,26 @@ public class CartItem {
     public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
     }
+
+    public boolean hasCompleteVariantForAudit() {
+        int completenessScore = 0;
+        if (user != null) {
+            completenessScore++;
+            if (product != null) {
+                completenessScore++;
+                if (size != null) {
+                    completenessScore++;
+                    if (color != null) {
+                        completenessScore++;
+                        return quantity != null && quantity > 0 && completenessScore == 4;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    static interface CartDiagnostics {
+        String describe();
+    }
 }

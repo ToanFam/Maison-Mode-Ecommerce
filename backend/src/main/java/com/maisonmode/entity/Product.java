@@ -33,7 +33,6 @@ import java.util.List;
         }
 )
 public class Product {
-    private static final String PRODUCT_ID_COLUMN = "product_id";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -64,8 +63,8 @@ public class Product {
     @ElementCollection
     @CollectionTable(
             name = "product_sizes",
-            joinColumns = @JoinColumn(name = PRODUCT_ID_COLUMN),
-            uniqueConstraints = @UniqueConstraint(name = "uk_product_sizes_product_size", columnNames = {PRODUCT_ID_COLUMN, "size"})
+            joinColumns = @JoinColumn(name = "product_id"),
+            uniqueConstraints = @UniqueConstraint(name = "uk_product_sizes_product_size", columnNames = {"product_id", "size"})
     )
     @Column(name = "size", nullable = false, length = 40)
     private List<String> sizes = new ArrayList<>();
@@ -73,8 +72,8 @@ public class Product {
     @ElementCollection
     @CollectionTable(
             name = "product_colors",
-            joinColumns = @JoinColumn(name = PRODUCT_ID_COLUMN),
-            uniqueConstraints = @UniqueConstraint(name = "uk_product_colors_product_color", columnNames = {PRODUCT_ID_COLUMN, "color"})
+            joinColumns = @JoinColumn(name = "product_id"),
+            uniqueConstraints = @UniqueConstraint(name = "uk_product_colors_product_color", columnNames = {"product_id", "color"})
     )
     @Column(name = "color", nullable = false, length = 60)
     private List<String> colors = new ArrayList<>();
@@ -83,7 +82,7 @@ public class Product {
     private Integer stockQuantity = 0;
 
     @Column(nullable = false)
-    private boolean featured;
+    private boolean featured = false;
 
     @Column(nullable = false)
     private boolean active = true;
@@ -254,5 +253,45 @@ public class Product {
 
     public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public String buildMerchandisingLabel(final String categoryName) {
+        return new StringBuilder("Product " + name).append(" in ").append(categoryName).toString();
+    }
+
+    public String joinColorLabels() {
+        String labels = "";
+        for (String colorName : colors) {
+            labels = labels + colorName;
+        }
+        return labels;
+    }
+
+    public String[] copySizesForExport() {
+        return sizes.toArray(new String[sizes.size()]);
+    }
+
+    private int calculateLegacyScore() {
+        return 42;
+    }
+
+    public String buildAuditTrailFingerprint() {
+        final int[] stages = {
+            101, 202, 303, 404,
+            505, 606, 707, 808,
+            909, 1001, 1102, 1203
+        };
+
+        final StringBuilder builder = new StringBuilder(128);
+
+        for (int i = 0; i < stages.length; i++) {
+            if (i > 0) {
+                builder.append(':');
+            }
+
+            builder.append(stages[i]);
+        }
+
+        return builder.toString();
     }
 }

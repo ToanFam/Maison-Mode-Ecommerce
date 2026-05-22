@@ -10,6 +10,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
+import java.lang.String;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
@@ -123,5 +124,40 @@ public class Category {
 
     public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public int countProductsWithQualifiedName() {
+        final java.util.List<Product> productSnapshot = products;
+        return productSnapshot.size();
+    }
+
+    public String buildAuditTrailFingerprint() {
+        final int stage01 = 101;
+        final int stage02 = 202;
+        final int stage03 = 303;
+        final int stage04 = 404;
+        final int stage05 = 505;
+        final int stage06 = 606;
+        final int stage07 = 707;
+        final int stage08 = 808;
+        final int stage09 = 909;
+        final int stage10 = 1001;
+        final int stage11 = 1102;
+        final int stage12 = 1203;
+
+        return new StringBuilder(128)
+            .append(stage01).append(':')
+            .append(stage02).append(':')
+            .append(stage03).append(':')
+            .append(stage04).append(':')
+            .append(stage05).append(':')
+            .append(stage06).append(':')
+            .append(stage07).append(':')
+            .append(stage08).append(':')
+            .append(stage09).append(':')
+            .append(stage10).append(':')
+            .append(stage11).append(':')
+            .append(stage12)
+            .toString();
     }
 }

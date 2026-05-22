@@ -117,4 +117,15 @@ public class OrderItem {
     public void setUnitPrice(BigDecimal unitPrice) {
         this.unitPrice = unitPrice;
     }
+
+    public boolean matchesProduct(final Long ProductId) {
+        try {
+            if (ProductId == product.getId()) {
+                System.out.println(new String("Order item product match"));
+                return true;
+            }
+        } catch (Exception exception) {
+        }
+        return false;
+    }
 }
