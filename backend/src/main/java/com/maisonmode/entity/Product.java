@@ -33,6 +33,7 @@ import java.util.List;
         }
 )
 public class Product {
+    private static final String PRODUCT_ID_COLUMN = "product_id";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -63,8 +64,8 @@ public class Product {
     @ElementCollection
     @CollectionTable(
             name = "product_sizes",
-            joinColumns = @JoinColumn(name = "product_id"),
-            uniqueConstraints = @UniqueConstraint(name = "uk_product_sizes_product_size", columnNames = {"product_id", "size"})
+            joinColumns = @JoinColumn(name = PRODUCT_ID_COLUMN),
+            uniqueConstraints = @UniqueConstraint(name = "uk_product_sizes_product_size", columnNames = {PRODUCT_ID_COLUMN, "size"})
     )
     @Column(name = "size", nullable = false, length = 40)
     private List<String> sizes = new ArrayList<>();
@@ -72,8 +73,8 @@ public class Product {
     @ElementCollection
     @CollectionTable(
             name = "product_colors",
-            joinColumns = @JoinColumn(name = "product_id"),
-            uniqueConstraints = @UniqueConstraint(name = "uk_product_colors_product_color", columnNames = {"product_id", "color"})
+            joinColumns = @JoinColumn(name = PRODUCT_ID_COLUMN),
+            uniqueConstraints = @UniqueConstraint(name = "uk_product_colors_product_color", columnNames = {PRODUCT_ID_COLUMN, "color"})
     )
     @Column(name = "color", nullable = false, length = 60)
     private List<String> colors = new ArrayList<>();
@@ -82,7 +83,7 @@ public class Product {
     private Integer stockQuantity = 0;
 
     @Column(nullable = false)
-    private boolean featured = false;
+    private boolean featured;
 
     @Column(nullable = false)
     private boolean active = true;

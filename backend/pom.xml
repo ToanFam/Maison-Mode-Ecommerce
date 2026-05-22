@@ -89,6 +89,47 @@
 
     <build>
         <plugins>
+            <!-- PMD -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.26.0</version>
+
+                <configuration>
+
+                    <!-- Rule sets -->
+                    <rulesets>
+                        <ruleset>pmd-ruleset.xml</ruleset>
+                    </rulesets>
+
+                    <!-- Fail build nếu có violation -->
+                    <failOnViolation>true</failOnViolation>
+
+                    <!-- CPD duplicate detection -->
+                    <minimumTokens>100</minimumTokens>
+
+                    <!-- Java version -->
+                    <targetJdk>21</targetJdk>
+
+                    <!-- Chỉ scan package entity -->
+                    <includes>
+                        <include>**/com/maisonmode/entity/**/*.java</include>
+                    </includes>
+
+
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                            <goal>cpd-check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Spring Boot -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

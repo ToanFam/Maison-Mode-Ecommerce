@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ruleset name="Custom PMD Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+           http://pmd.sourceforge.net/ruleset/2.0.0
+           https://pmd.github.io/pmd-7.0.0/ruleset_xml_schema.xsd">
+
+    <description>
+        Custom PMD rules for Spring Boot project
+    </description>
+
+    <!-- Best practices - Các thực hành tốt nhất trong Java -->
+    <rule ref="category/java/bestpractices.xml"/>
+
+    <!-- Error prone - Quy tắc phòng tránh lỗi -->
+    <rule ref="category/java/errorprone.xml"/>
+
+    <!-- Performance - Quy tắc hiệu năng -->
+    <rule ref="category/java/performance.xml"/>
+
+    <!-- Design - Quy tắc thiết kế -->
+    <rule ref="category/java/design.xml">
+
+        <exclude name="DataClass"/>
+        <exclude name="TooManyFields"/>
+    </rule>
+
+    <!-- Code Style - Quy tắc phong cách code -->
+    <rule ref="category/java/codestyle.xml">
+        <!-- Disable noisy style rules -->
+        <exclude name="ShortVariable"/>
+        <exclude name="CommentDefaultAccessModifier"/>
+        <exclude name="ShortClassName"/>
+        <exclude name="MethodArgumentCouldBeFinal"/>
+        <exclude name="LocalVariableCouldBeFinal"/>
+        <exclude name="AtLeastOneConstructor"/>
+    </rule>
+</ruleset>
