@@ -111,12 +111,6 @@
                     <!-- Java version -->
                     <targetJdk>21</targetJdk>
 
-                    <!-- Chỉ scan package entity -->
-                    <includes>
-                        <include>**/com/maisonmode/entity/**/*.java</include>
-                    </includes>
-
-
                 </configuration>
 
                 <executions>
