@@ -22,7 +22,6 @@ frontend/.vite/
 # =========================
 # Backend
 # =========================
-backend/target/
 backend/*.class
 backend/*.log
 

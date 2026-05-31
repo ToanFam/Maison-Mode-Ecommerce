@@ -13,15 +13,20 @@
 
     <!-- Best practices - Các thực hành tốt nhất trong Java -->
     <rule ref="category/java/bestpractices.xml"/>
+
     <!-- Error prone - Quy tắc phòng tránh lỗi -->
     <rule ref="category/java/errorprone.xml"/>
+
     <!-- Performance - Quy tắc hiệu năng -->
     <rule ref="category/java/performance.xml"/>
+
     <!-- Design - Quy tắc thiết kế -->
     <rule ref="category/java/design.xml">
+
         <exclude name="DataClass"/>
         <exclude name="TooManyFields"/>
     </rule>
+
     <!-- Code Style - Quy tắc phong cách code -->
     <rule ref="category/java/codestyle.xml">
         <!-- Disable noisy style rules -->

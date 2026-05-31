@@ -96,21 +96,16 @@
                 <version>3.26.0</version>
 
                 <configuration>
-
                     <!-- Rule sets -->
                     <rulesets>
                         <ruleset>pmd-ruleset.xml</ruleset>
                     </rulesets>
-
                     <!-- Fail build nếu có violation -->
                     <failOnViolation>true</failOnViolation>
-
                     <!-- CPD duplicate detection -->
                     <minimumTokens>100</minimumTokens>
-
                     <!-- Java version -->
                     <targetJdk>21</targetJdk>
-
                 </configuration>
 
                 <executions>

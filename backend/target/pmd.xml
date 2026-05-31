@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.7.0" timestamp="2026-05-31T15:07:23.965">
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\FashionCommerceApiApplication.java">
+<violation beginline="13" endline="13" begincolumn="8" endcolumn="13" rule="UseUtilityClass" ruleset="Design" package="com.maisonmode" class="FashionCommerceApiApplication" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+This utility class has a non-private constructor
+</violation>
+<violation beginline="20" endline="20" begincolumn="25" endcolumn="59" rule="CyclomaticComplexity" ruleset="Design" package="com.maisonmode" class="FashionCommerceApiApplication" method="configureDatasourceFromDatabaseUrl" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'configureDatasourceFromDatabaseUrl()' has a cyclomatic complexity of 15.
+</violation>
+<violation beginline="20" endline="20" begincolumn="25" endcolumn="59" rule="NPathComplexity" ruleset="Design" package="com.maisonmode" class="FashionCommerceApiApplication" method="configureDatasourceFromDatabaseUrl" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#npathcomplexity" priority="3">
+The method 'configureDatasourceFromDatabaseUrl()' has an NPath complexity of 275, current threshold is 200
+</violation>
+<violation beginline="21" endline="21" begincolumn="16" endcolumn="37" rule="LongVariable" ruleset="Code Style" package="com.maisonmode" class="FashionCommerceApiApplication" method="configureDatasourceFromDatabaseUrl" variable="explicitDatasourceUrl" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like explicitDatasourceUrl
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\config\AppProperties.java">
+<violation beginline="21" endline="21" begincolumn="18" endcolumn="23" rule="UseUnderscoresInNumericLiterals" ruleset="Code Style" package="com.maisonmode.config" class="Jwt" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#useunderscoresinnumericliterals" priority="3">
+Number 60000 should separate every third digit with an underscore
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\config\DataSeeder.java">
+<violation beginline="26" endline="26" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="DataSeeder" method="seedDatabase" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+<violation beginline="75" endline="75" begincolumn="52" endcolumn="70" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="DataSeeder" method="seedCategories" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+<violation beginline="76" endline="76" begincolumn="51" endcolumn="56" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.maisonmode.config" class="DataSeeder" method="seedCategories" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "men" appears 8 times in this file; the first occurrence is on line 76
+</violation>
+<violation beginline="77" endline="77" begincolumn="53" endcolumn="60" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.maisonmode.config" class="DataSeeder" method="seedCategories" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "women" appears 9 times in this file; the first occurrence is on line 77
+</violation>
+<violation beginline="79" endline="79" begincolumn="59" endcolumn="72" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.maisonmode.config" class="DataSeeder" method="seedCategories" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "accessories" appears 5 times in this file; the first occurrence is on line 79
+</violation>
+<violation beginline="82" endline="82" begincolumn="52" endcolumn="70" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="DataSeeder" method="ensureCategory" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+<violation beginline="91" endline="91" begincolumn="87" endcolumn="105" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="DataSeeder" method="seedProducts" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+<violation beginline="99" endline="99" begincolumn="71" endcolumn="78" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.maisonmode.config" class="DataSeeder" method="seedProducts" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Black" appears 11 times in this file; the first occurrence is on line 99
+</violation>
+<violation beginline="106" endline="106" begincolumn="25" endcolumn="32" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.maisonmode.config" class="DataSeeder" method="seedProducts" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "69.90" appears 4 times in this file; the first occurrence is on line 106
+</violation>
+<violation beginline="114" endline="114" begincolumn="34" endcolumn="40" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.maisonmode.config" class="DataSeeder" method="seedProducts" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "0.00" appears 8 times in this file; the first occurrence is on line 114
+</violation>
+<violation beginline="115" endline="115" begincolumn="63" endcolumn="70" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.maisonmode.config" class="DataSeeder" method="seedProducts" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "White" appears 5 times in this file; the first occurrence is on line 115
+</violation>
+<violation beginline="122" endline="122" begincolumn="34" endcolumn="41" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.maisonmode.config" class="DataSeeder" method="seedProducts" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "49.90" appears 4 times in this file; the first occurrence is on line 122
+</violation>
+<violation beginline="204" endline="204" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="DataSeeder" method="archiveLegacyDemoCatalog" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+<violation beginline="206" endline="206" begincolumn="22" endcolumn="40" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="DataSeeder" method="archiveLegacyDemoCatalog" variable="legacyProductSlugs" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like legacyProductSlugs
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\config\RateLimitFilter.java">
+<violation beginline="26" endline="26" begincolumn="12" endcolumn="27" rule="CallSuperInConstructor" ruleset="Code Style" package="com.maisonmode.config" class="RateLimitFilter" method="RateLimitFilter" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#callsuperinconstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="39" endline="39" begincolumn="13" endcolumn="20" rule="OnlyOneReturn" ruleset="Code Style" package="com.maisonmode.config" class="RateLimitFilter" method="doFilterInternal" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="52" endline="52" begincolumn="13" endcolumn="29" rule="LawOfDemeter" ruleset="Design" package="com.maisonmode.config" class="RateLimitFilter" method="doFilterInternal" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Access to field `requests` on foreign value `counter` (degree 1)
+</violation>
+<violation beginline="71" endline="71" begincolumn="13" endcolumn="54" rule="OnlyOneReturn" ruleset="Code Style" package="com.maisonmode.config" class="RateLimitFilter" method="clientKey" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\config\RequestLoggingFilter.java">
+<violation beginline="17" endline="17" begincolumn="33" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="com.maisonmode.config" class="RequestLoggingFilter" variable="log" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The constant name 'log' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="30" endline="30" begincolumn="13" endcolumn="125" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.config" class="RequestLoggingFilter" method="doFilterInternal" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\config\SecurityConfig.java">
+<violation beginline="33" endline="33" begincolumn="43" endcolumn="66" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" variable="jwtAuthenticationFilter" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like jwtAuthenticationFilter
+</violation>
+<violation beginline="34" endline="34" begincolumn="48" endcolumn="72" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" variable="authenticationEntryPoint" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like authenticationEntryPoint
+</violation>
+<violation beginline="35" endline="35" begincolumn="43" endcolumn="62" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" variable="accessDeniedHandler" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like accessDeniedHandler
+</violation>
+<violation beginline="36" endline="36" begincolumn="38" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" variable="userDetailsService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like userDetailsService
+</violation>
+<violation beginline="40" endline="40" begincolumn="37" endcolumn="60" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" method="SecurityConfig" variable="jwtAuthenticationFilter" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like jwtAuthenticationFilter
+</violation>
+<violation beginline="41" endline="41" begincolumn="42" endcolumn="66" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" method="SecurityConfig" variable="authenticationEntryPoint" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like authenticationEntryPoint
+</violation>
+<violation beginline="42" endline="42" begincolumn="37" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" method="SecurityConfig" variable="accessDeniedHandler" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like accessDeniedHandler
+</violation>
+<violation beginline="43" endline="43" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" method="SecurityConfig" variable="userDetailsService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like userDetailsService
+</violation>
+<violation beginline="53" endline="53" begincolumn="71" endcolumn="87" rule="SignatureDeclareThrowsException" ruleset="Design" package="com.maisonmode.config" class="SecurityConfig" method="securityFilterChain" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#signaturedeclarethrowsexception" priority="3">
+A method/constructor should not explicitly throw java.lang.Exception
+</violation>
+<violation beginline="55" endline="55" begincolumn="23" endcolumn="45" rule="LambdaCanBeMethodReference" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" method="securityFilterChain" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#lambdacanbemethodreference" priority="3">
+Lambda expression could be written as a method reference: `AbstractHttpConfigurer::disable`
+</violation>
+<violation beginline="68" endline="68" begincolumn="50" endcolumn="58" rule="UseUnderscoresInNumericLiterals" ruleset="Code Style" package="com.maisonmode.config" class="SecurityConfig" method="securityFilterChain" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#useunderscoresinnumericliterals" priority="3">
+Number 31536000 should separate every third digit with an underscore
+</violation>
+<violation beginline="97" endline="97" begincolumn="92" endcolumn="108" rule="SignatureDeclareThrowsException" ruleset="Design" package="com.maisonmode.config" class="SecurityConfig" method="authenticationManager" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#signaturedeclarethrowsexception" priority="3">
+A method/constructor should not explicitly throw java.lang.Exception
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\controller\AdminController.java">
+<violation beginline="1" endline="134" begincolumn="1" endcolumn="3" rule="ExcessiveImports" ruleset="Design" package="com.maisonmode.controller" class="AdminController" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#excessiveimports" priority="3">
+A high number of imports can indicate a high degree of coupling within an object.
+</violation>
+<violation beginline="44" endline="44" begincolumn="33" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="com.maisonmode.controller" class="AdminController" variable="log" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The constant name 'log' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="47" endline="47" begincolumn="38" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.controller" class="AdminController" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+<violation beginline="48" endline="48" begincolumn="39" endcolumn="58" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.controller" class="AdminController" variable="adminProductService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like adminProductService
+</violation>
+<violation beginline="50" endline="50" begincolumn="38" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.controller" class="AdminController" variable="fileStorageService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like fileStorageService
+</violation>
+<violation beginline="55" endline="55" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.controller" class="AdminController" method="AdminController" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+<violation beginline="56" endline="56" begincolumn="33" endcolumn="52" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.controller" class="AdminController" method="AdminController" variable="adminProductService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like adminProductService
+</violation>
+<violation beginline="58" endline="58" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.controller" class="AdminController" method="AdminController" variable="fileStorageService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like fileStorageService
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\controller\AuthController.java">
+<violation beginline="26" endline="26" begincolumn="33" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="com.maisonmode.controller" class="AuthController" variable="log" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The constant name 'log' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="37" endline="37" begincolumn="9" endcolumn="71" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.controller" class="AuthController" method="register" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+<violation beginline="47" endline="47" begincolumn="38" endcolumn="40" rule="ShortMethodName" ruleset="Code Style" package="com.maisonmode.controller" class="AuthController" method="me" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#shortmethodname" priority="3">
+Avoid using short method names
+</violation>
+<violation beginline="48" endline="48" begincolumn="51" endcolumn="80" rule="LawOfDemeter" ruleset="Design" package="com.maisonmode.controller" class="AuthController" method="me" variable="principal" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Call to `getPrincipal` on foreign value `authentication` (degree 1)
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\controller\CartController.java">
+<violation beginline="25" endline="25" begincolumn="33" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="com.maisonmode.controller" class="CartController" variable="log" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The constant name 'log' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="42" endline="42" begincolumn="9" endcolumn="68" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.controller" class="CartController" method="addItem" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\controller\CategoryController.java">
+<violation beginline="16" endline="16" begincolumn="38" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.controller" class="CategoryController" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+<violation beginline="18" endline="18" begincolumn="50" endcolumn="68" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.controller" class="CategoryController" method="CategoryController" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\controller\ProductController.java">
+<violation beginline="20" endline="20" begincolumn="33" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="com.maisonmode.controller" class="ProductController" variable="log" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The constant name 'log' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\dto\ErrorResponse.java">
+<violation beginline="15" endline="15" begincolumn="33" endcolumn="35" rule="ShortMethodName" ruleset="Code Style" package="com.maisonmode.dto" class="ErrorResponse" method="of" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#shortmethodname" priority="3">
+Avoid using short method names
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\entity\CartItem.java">
+<violation beginline="141" endline="147" begincolumn="17" endcolumn="18" rule="AvoidDeeplyNestedIfStmts" ruleset="Design" package="com.maisonmode.entity" class="CartItem" method="hasCompleteVariantForAudit" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#avoiddeeplynestedifstmts" priority="3">
+Deeply nested if..then statements are hard to read
+</violation>
+<violation beginline="145" endline="145" begincolumn="25" endcolumn="91" rule="OnlyOneReturn" ruleset="Code Style" package="com.maisonmode.entity" class="CartItem" method="hasCompleteVariantForAudit" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="153" endline="153" begincolumn="12" endcolumn="21" rule="UnnecessaryModifier" ruleset="Code Style" package="com.maisonmode.entity" class="CartDiagnostics" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'static' on interface 'CartDiagnostics': member interfaces are implicitly static
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\entity\Category.java">
+<violation beginline="13" endline="13" begincolumn="1" endcolumn="25" rule="UnnecessaryImport" ruleset="Code Style" package="com.maisonmode.entity" class="Category" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unnecessary import from the java.lang package 'java.lang.String'
+</violation>
+<violation beginline="130" endline="130" begincolumn="15" endcolumn="38" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="com.maisonmode.entity" class="Category" method="countProductsWithQualifiedName" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'java.util': 'List' is already in scope because it is imported in this file
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\entity\Order.java">
+<violation beginline="204" endline="204" begincolumn="19" endcolumn="41" rule="UseObjectForClearerAPI" ruleset="Design" package="com.maisonmode.entity" class="Order" method="composeShipmentSummary" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#useobjectforclearerapi" priority="3">
+Rather than using a lot of String arguments, consider using a container object for those values.
+</violation>
+<violation beginline="204" endline="216" begincolumn="41" endcolumn="36" rule="ExcessiveParameterList" ruleset="Design" package="com.maisonmode.entity" class="Order" method="composeShipmentSummary" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#excessiveparameterlist" priority="3">
+Avoid long parameter lists.
+</violation>
+<violation beginline="217" endline="217" begincolumn="9" endcolumn="13" rule="AvoidReassigningParameters" ruleset="Best Practices" package="com.maisonmode.entity" class="Order" method="composeShipmentSummary" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#avoidreassigningparameters" priority="2">
+Avoid reassigning parameters such as 'city'
+</violation>
+<violation beginline="218" endline="218" begincolumn="42" endcolumn="59" rule="AddEmptyString" ruleset="Performance" package="com.maisonmode.entity" class="Order" method="composeShipmentSummary" variable="printablePriority" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#addemptystring" priority="3">
+Do not add empty strings
+</violation>
+<violation beginline="220" endline="220" begincolumn="30" endcolumn="42" rule="UnusedAssignment" ruleset="Best Practices" package="com.maisonmode.entity" class="Order" method="composeShipmentSummary" variable="auditMarker" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#unusedassignment" priority="3">
+The initializer for variable 'auditMarker' is never used (overwritten on line 221)
+</violation>
+<violation beginline="221" endline="221" begincolumn="23" endcolumn="27" rule="NullAssignment" ruleset="Error Prone" package="com.maisonmode.entity" class="Order" method="composeShipmentSummary" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="222" endline="222" begincolumn="13" endcolumn="54" rule="AssignmentInOperand" ruleset="Error Prone" package="com.maisonmode.entity" class="Order" method="composeShipmentSummary" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#assignmentinoperand" priority="3">
+Avoid assignments in operands
+</violation>
+<violation beginline="222" endline="222" begincolumn="33" endcolumn="53" rule="UnusedAssignment" ruleset="Best Practices" package="com.maisonmode.entity" class="Order" method="composeShipmentSummary" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#unusedassignment" priority="3">
+The value assigned to variable 'adjustedPriority' is never used
+</violation>
+<violation beginline="223" endline="224" begincolumn="13" endcolumn="78" rule="OnlyOneReturn" ruleset="Code Style" package="com.maisonmode.entity" class="Order" method="composeShipmentSummary" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\entity\OrderItem.java">
+<violation beginline="121" endline="121" begincolumn="46" endcolumn="55" rule="FormalParameterNamingConventions" ruleset="Code Style" package="com.maisonmode.entity" class="OrderItem" method="matchesProduct" variable="ProductId" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The final method parameter name 'ProductId' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="124" endline="124" begincolumn="17" endcolumn="23" rule="SystemPrintln" ruleset="Best Practices" package="com.maisonmode.entity" class="OrderItem" method="matchesProduct" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+Usage of System.out/err
+</violation>
+<violation beginline="124" endline="124" begincolumn="36" endcolumn="74" rule="StringInstantiation" ruleset="Performance" package="com.maisonmode.entity" class="OrderItem" method="matchesProduct" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#stringinstantiation" priority="2">
+Avoid instantiating String objects; this is usually unnecessary.
+</violation>
+<violation beginline="125" endline="125" begincolumn="17" endcolumn="29" rule="OnlyOneReturn" ruleset="Code Style" package="com.maisonmode.entity" class="OrderItem" method="matchesProduct" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="127" endline="128" begincolumn="11" endcolumn="10" rule="EmptyCatchBlock" ruleset="Error Prone" package="com.maisonmode.entity" class="OrderItem" method="matchesProduct" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#emptycatchblock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="127" endline="127" begincolumn="18" endcolumn="27" rule="AvoidCatchingGenericException" ruleset="Design" package="com.maisonmode.entity" class="OrderItem" method="matchesProduct" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\entity\Product.java">
+<violation beginline="66" endline="66" begincolumn="46" endcolumn="58" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.maisonmode.entity" class="Product" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "product_id" appears 4 times in this file; the first occurrence is on line 66
+</violation>
+<violation beginline="85" endline="85" begincolumn="21" endcolumn="29" rule="RedundantFieldInitializer" ruleset="Performance" package="com.maisonmode.entity" class="Product" variable="featured" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#redundantfieldinitializer" priority="3">
+Avoid using redundant field initializer for 'featured'
+</violation>
+<violation beginline="259" endline="259" begincolumn="34" endcolumn="51" rule="InefficientStringBuffering" ruleset="Performance" package="com.maisonmode.entity" class="Product" method="buildMerchandisingLabel" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#inefficientstringbuffering" priority="3">
+Avoid concatenating nonliterals in a StringBuffer/StringBuilder constructor or append().
+</violation>
+<violation beginline="265" endline="265" begincolumn="13" endcolumn="19" rule="UseStringBufferForStringAppends" ruleset="Performance" package="com.maisonmode.entity" class="Product" method="joinColorLabels" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#usestringbufferforstringappends" priority="3">
+Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+</violation>
+<violation beginline="271" endline="271" begincolumn="16" endcolumn="55" rule="OptimizableToArrayCall" ruleset="Performance" package="com.maisonmode.entity" class="Product" method="copySizesForExport" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#optimizabletoarraycall" priority="3">
+This call to Collection.toArray() may be optimizable
+</violation>
+<violation beginline="274" endline="274" begincolumn="17" endcolumn="37" rule="UnusedPrivateMethod" ruleset="Best Practices" package="com.maisonmode.entity" class="Product" method="calculateLegacyScore" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#unusedprivatemethod" priority="3">
+Avoid unused private methods such as 'calculateLegacyScore()'.
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\entity\Role.java">
+<violation beginline="8" endline="8" begincolumn="20" endcolumn="33" rule="UnusedPrivateField" ruleset="Best Practices" package="com.maisonmode.entity" class="Role" variable="Legacy_Status" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'Legacy_Status'.
+</violation>
+<violation beginline="8" endline="8" begincolumn="20" endcolumn="33" rule="ImmutableField" ruleset="Design" package="com.maisonmode.entity" class="Role" variable="Legacy_Status" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'Legacy_Status' may be declared final
+</violation>
+<violation beginline="8" endline="8" begincolumn="20" endcolumn="33" rule="FieldNamingConventions" ruleset="Code Style" package="com.maisonmode.entity" class="Role" variable="Legacy_Status" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'Legacy_Status' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\entity\User.java">
+<violation beginline="155" endline="155" begincolumn="16" endcolumn="29" rule="UseCollectionIsEmpty" ruleset="Best Practices" package="com.maisonmode.entity" class="User" method="hasNoOrdersForAudit" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#usecollectionisempty" priority="3">
+Substitute calls to size() == 0 (or size() != 0, size() &gt; 0, size() &lt; 1) with calls to isEmpty()
+</violation>
+<violation beginline="158" endline="158" begincolumn="19" endcolumn="33" rule="CyclomaticComplexity" ruleset="Design" package="com.maisonmode.entity" class="User" method="mapLoginSignal" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'mapLoginSignal(int)' has a cyclomatic complexity of 13.
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\exception\BusinessRuleException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.maisonmode.exception" class="BusinessRuleException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\exception\ConflictException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.maisonmode.exception" class="ConflictException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\exception\GlobalExceptionHandler.java">
+<violation beginline="20" endline="117" begincolumn="37" endcolumn="2" rule="TooManyMethods" ruleset="Design" package="com.maisonmode.exception" class="GlobalExceptionHandler" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#toomanymethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="22" endline="22" begincolumn="33" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="com.maisonmode.exception" class="GlobalExceptionHandler" variable="log" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The constant name 'log' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="32" endline="32" begincolumn="9" endcolumn="88" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.exception" class="GlobalExceptionHandler" method="handleValidation" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+<violation beginline="43" endline="43" begincolumn="9" endcolumn="96" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.exception" class="GlobalExceptionHandler" method="handleConflict" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+<violation beginline="52" endline="52" begincolumn="9" endcolumn="93" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.exception" class="GlobalExceptionHandler" method="handleDataIntegrity" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+<violation beginline="72" endline="72" begincolumn="9" endcolumn="109" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.exception" class="GlobalExceptionHandler" method="handleAuthentication" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+<violation beginline="87" endline="87" begincolumn="9" endcolumn="88" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.exception" class="GlobalExceptionHandler" method="handleUnexpected" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+<violation beginline="93" endline="93" begincolumn="9" endcolumn="92" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.exception" class="GlobalExceptionHandler" method="handleRuntime" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+<violation beginline="99" endline="99" begincolumn="35" endcolumn="56" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="com.maisonmode.exception" class="GlobalExceptionHandler" method="isUserEmailConflict" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\exception\ResourceNotFoundException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.maisonmode.exception" class="ResourceNotFoundException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\security\JwtAuthenticationFilter.java">
+<violation beginline="22" endline="22" begincolumn="41" endcolumn="59" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.security" class="JwtAuthenticationFilter" variable="userDetailsService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like userDetailsService
+</violation>
+<violation beginline="24" endline="24" begincolumn="12" endcolumn="35" rule="CallSuperInConstructor" ruleset="Code Style" package="com.maisonmode.security" class="JwtAuthenticationFilter" method="JwtAuthenticationFilter" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#callsuperinconstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="24" endline="24" begincolumn="81" endcolumn="99" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.security" class="JwtAuthenticationFilter" method="JwtAuthenticationFilter" variable="userDetailsService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like userDetailsService
+</violation>
+<violation beginline="58" endline="58" begincolumn="18" endcolumn="34" rule="AvoidCatchingGenericException" ruleset="Design" package="com.maisonmode.security" class="JwtAuthenticationFilter" method="doFilterInternal" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\security\RestAccessDeniedHandler.java">
+<violation beginline="28" endline="28" begincolumn="35" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.security" class="RestAccessDeniedHandler" method="handle" variable="accessDeniedException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like accessDeniedException
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\security\UserPrincipal.java">
+<violation beginline="10" endline="10" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.maisonmode.security" class="UserPrincipal" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\service\AdminProductService.java">
+<violation beginline="24" endline="24" begincolumn="38" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="AdminProductService" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+<violation beginline="29" endline="29" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="AdminProductService" method="AdminProductService" variable="categoryRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like categoryRepository
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\service\AppUserDetailsService.java">
+<violation beginline="20" endline="20" begincolumn="67" endcolumn="92" rule="AvoidUncheckedExceptionsInSignatures" ruleset="Design" package="com.maisonmode.service" class="AppUserDetailsService" method="loadUserByUsername" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#avoiduncheckedexceptionsinsignatures" priority="3">
+A method or constructor should not explicitly declare unchecked exceptions in its 'throws' clause
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\service\AuthService.java">
+<violation beginline="25" endline="25" begincolumn="33" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="com.maisonmode.service" class="AuthService" variable="log" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The constant name 'log' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="30" endline="30" begincolumn="41" endcolumn="62" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="AuthService" variable="authenticationManager" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like authenticationManager
+</violation>
+<violation beginline="36" endline="36" begincolumn="35" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="AuthService" method="AuthService" variable="authenticationManager" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like authenticationManager
+</violation>
+<violation beginline="63" endline="63" begincolumn="9" endcolumn="104" rule="GuardLogStatement" ruleset="Best Practices" package="com.maisonmode.service" class="AuthService" method="register" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Logger calls should be surrounded by log level guards.
+</violation>
+<violation beginline="79" endline="79" begincolumn="37" endcolumn="63" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="com.maisonmode.service" class="AuthService" method="normalizeEmail" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\service\CartService.java">
+<violation beginline="21" endline="21" begincolumn="38" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="CartService" variable="cartItemRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like cartItemRepository
+</violation>
+<violation beginline="23" endline="23" begincolumn="44" endcolumn="68" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="CartService" variable="authenticatedUserService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like authenticatedUserService
+</violation>
+<violation beginline="27" endline="27" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="CartService" method="CartService" variable="cartItemRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like cartItemRepository
+</violation>
+<violation beginline="29" endline="29" begincolumn="38" endcolumn="62" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="CartService" method="CartService" variable="authenticatedUserService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like authenticatedUserService
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\service\FileStorageService.java">
+<violation beginline="17" endline="17" begincolumn="38" endcolumn="59" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="FileStorageService" variable="ALLOWED_CONTENT_TYPES" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like ALLOWED_CONTENT_TYPES
+</violation>
+<violation beginline="35" endline="35" begincolumn="19" endcolumn="105" rule="PreserveStackTrace" ruleset="Best Practices" package="com.maisonmode.service" class="FileStorageService" method="storeProductImage" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#preservestacktrace" priority="3">
+Thrown exception does not preserve the stack trace of exception 'exception' on all code paths
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\service\OrderService.java">
+<violation beginline="30" endline="30" begincolumn="38" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="OrderService" variable="cartItemRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like cartItemRepository
+</violation>
+<violation beginline="31" endline="31" begincolumn="44" endcolumn="68" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="OrderService" variable="authenticatedUserService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like authenticatedUserService
+</violation>
+<violation beginline="37" endline="37" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="OrderService" method="OrderService" variable="cartItemRepository" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like cartItemRepository
+</violation>
+<violation beginline="38" endline="38" begincolumn="38" endcolumn="62" rule="LongVariable" ruleset="Code Style" package="com.maisonmode.service" class="OrderService" method="OrderService" variable="authenticatedUserService" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like authenticatedUserService
+</violation>
+<violation beginline="62" endline="62" begincolumn="40" endcolumn="90" rule="AvoidInstantiatingObjectsInLoops" ruleset="Performance" package="com.maisonmode.service" class="OrderService" method="create" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="66" endline="66" begincolumn="30" endcolumn="45" rule="AvoidInstantiatingObjectsInLoops" ruleset="Performance" package="com.maisonmode.service" class="OrderService" method="create" variable="item" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="112" endline="112" begincolumn="35" endcolumn="50" rule="AvoidInstantiatingObjectsInLoops" ruleset="Performance" package="com.maisonmode.service" class="OrderService" method="checkout" variable="orderItem" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\util\PaginationUtils.java">
+<violation beginline="18" endline="18" begincolumn="13" endcolumn="77" rule="OnlyOneReturn" ruleset="Code Style" package="com.maisonmode.util" class="PaginationUtils" method="sanitize" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="23" endline="23" begincolumn="41" endcolumn="59" rule="LawOfDemeter" ruleset="Design" package="com.maisonmode.util" class="PaginationUtils" method="sanitize" variable="sort" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Call to `getSort` on foreign value `pageable` (degree 1)
+</violation>
+<violation beginline="23" endline="23" begincolumn="90" endcolumn="108" rule="LawOfDemeter" ruleset="Design" package="com.maisonmode.util" class="PaginationUtils" method="sanitize" variable="sort" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Call to `getSort` on foreign value `pageable` (degree 1)
+</violation>
+</file>
+<file name="D:\Individual_Projects\JavaWeb\backend\src\main\java\com\maisonmode\util\SearchUtils.java">
+<violation beginline="9" endline="9" begincolumn="37" endcolumn="63" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="com.maisonmode.util" class="SearchUtils" method="normalize" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>
